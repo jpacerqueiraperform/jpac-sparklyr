@@ -11,6 +11,7 @@ library(h2o)
 library(dplyr)
 
 options(rsparkling.sparklingwater.version = "2.1.0")
+#spark_install(version = "2.1.0")
 sc <- spark_connect(master= "local", version = "2.1.0")
 
 mypath <- system.file("extdata", "prostate.csv", package = "h2o")

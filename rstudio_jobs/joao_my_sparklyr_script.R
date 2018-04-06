@@ -4,6 +4,8 @@
 #install.packages("nycflights13", lib="1.0")
 #install.packages("Lahman")
 #install.packages("rsparkling")
+#install.packages("DBI", lib="0.6.1")
+
 
 #detach("package:rsparkling", unload = TRUE)
 #if ("package:h2o" %in% search()) { detach("package:h2o", unload = TRUE) }
