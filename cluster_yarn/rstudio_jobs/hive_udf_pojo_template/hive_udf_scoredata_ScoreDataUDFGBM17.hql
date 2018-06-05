@@ -1,0 +1,7 @@
+ADD JAR hdfs:///user/analyticsdb/H2O/UDFtest/GBM17lib/h2o-genmodel.jar;
+ADD JAR hdfs:///user/analyticsdb/H2O/UDFtest/GBM17lib/ScoreDataUDFGBM17-1.0-SNAPSHOT.jar;
+CREATE TEMPORARY FUNCTION scoredata AS 'ai.h2o.hive.udf.ScoreDataUDFGBM17';
+USE DEFAULT;
+SHOW TABLES;
+DROP TABLE IF EXISTS prostate_pred;
+CREATE TABLE prostate_pred AS SELECT ID,CAPSULE,AGE,RACE,DPROS,DCAPS,PSA,GLEASON,VOL, scoredata(CAPSULE,AGE,RACE,DPROS,DCAPS,PSA,GLEASON) as PREDICT_VOL FROM prostate LIMIT 380;

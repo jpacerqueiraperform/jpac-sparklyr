@@ -1,0 +1,12 @@
+library(dplyr)
+library(ggplot2)
+library(nycflights13)
+library(sparklyr)
+library(h2o)
+options(rsparkling.sparklingwater.version = "2.1.27") #,rsparkling.sparklingwater.location = "/home/analyticsdb/spark/sparklingwater/sparkling-water-2.1.27/assembly/build/libs/sparkling-water-assembly_2.11-2.1.27-all.jar")
+library(rsparkling)
+
+#library(DBI,version="1.0.0")
+#library(ORCH)
+#library(DT)
+#library(Lahman)

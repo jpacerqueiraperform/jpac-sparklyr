@@ -1,11 +1,15 @@
 
-  - This Setup involves activation of RStudio for the following options :
-  
-  - - tpoc_vm : with a "local vm" machine  using tpoc_vm/bdalite4.7
 
-  - - cluster_yarn : with a " gateway workbench (yarn/hadoop_2.6.0/spark_2.1) " machine  using cluster_yarn/rstudio_sparklyr
+
+  - This Setup involves activation of RStudio on bda Gateways and uses of the following libraries for R : 
   
-  The following libraries for R : 
+  - Setup in rstudio_sparklyr , run in this order :
+   
+  -    - $ bash -x install_rstudio.sh
+  -    - $ bash -x install_additional_packages.sh
+  -    - $ bash -x install_sparklyr_2.1.sh
+      
+    
 
   -  Using sparklyr (Apache Spark) , DBI (Apache Hive SQL) , H2O (Machine Learning) 
 
@@ -17,6 +21,9 @@
   
   - - Usage of H2O Models as Hive UDF POJO/MOJO : https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/hive_udf_template/hive_udf_pojo_template 
 
+  -  Using SparkliR with conda R zio in the driver for spark containers :
+
+  - - From Cloudera Workbench option2 : https://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/ 
 
  Enjoy :) 
 
