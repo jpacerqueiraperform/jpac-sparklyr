@@ -1,5 +1,11 @@
 
-  - This Setup involves activation of RStudio on bdalite4.7 and uses of the following libraries for R : 
+  - This Setup involves activation of RStudio for the following options :
+  
+  - - tpoc_vm : with a "local vm" machine  using tpoc_vm/bdalite4.7
+
+  - - cluster_yarn : with a " gateway workbench (yarn/hadoop_2.6.0/spark_2.1) " machine  using cluster_yarn/rstudio_sparklyr
+  
+  The following libraries for R : 
 
   -  Using sparklyr (Apache Spark) , DBI (Apache Hive SQL) , H2O (Machine Learning) 
 
