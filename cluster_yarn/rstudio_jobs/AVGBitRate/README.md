@@ -47,8 +47,8 @@ The goal of the analysis in this demo is to predict if the average bit rate in o
 * Number if Interruptions in strem buffering : interrupts
 * Startup Error digit OR 0=No error : startup_error
 
-## Start Sparklyr with condaR container context
-The following article [here](https://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/) from cloudera blog has been followed in Option2. mode to produce a condar version of the local R environment. 
+## R-Studio with sparklyr context as condar
+The following article [here](https://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/) from cloudera blog has been followed in to produce a condar version of the local R environment loading spark_apply() operations in the spark container. 
 ## Building the Model in R
 No need to cut and paste code: the complete R script described below is part of this git repository (GBM_AVGBitRate.R).
 ### Load the training and test data into H2O
