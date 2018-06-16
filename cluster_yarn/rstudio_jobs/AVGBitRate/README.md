@@ -37,7 +37,7 @@ This tutorial assumes the following:
 
 For this post, we will be using with H2O an internal Perform group asset conviva , used on the evaluation of the streaming conditions for Perform Group DAZN App
 
-The goal of the analysis in this demo is to predict if the average bit rate in our conviva data increases according to the evolution in the streaming details and parameters .  The columns we will be using are the numerical attributes in cnviva that  can be directly used to “learn” using ML
+The goal of the analysis in this demo is to predict if the average bit rate in our conviva data increases according to the evolution in the streaming details and parameters .  The columns we will be using are the numerical attributes in conviva that  can be directly used to “learn” using ML
 * ASN Network distribution  : asn
 * Stream start time: start_time 
 * Stream play time : play_time
@@ -47,13 +47,15 @@ The goal of the analysis in this demo is to predict if the average bit rate in o
 * Number if Interruptions in strem buffering : interrupts
 * Startup Error digit OR 0=No error : startup_error
 
+## Start Sparklyr with condaR container context
+The following article [here](https://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/) from cloudera blog has been followed in Option2. mode to produce a condar version of the local R environment. 
 ## Building the Model in R
-No need to cut and paste code: the complete R script described below is part of this git repository (GBM-example.R).
+No need to cut and paste code: the complete R script described below is part of this git repository (GBM_AVGBitRate.R).
 ### Load the training and test data into H2O
 Since we are playing with a small data set for this example, we will start H2O locally and load the datasets:
 
 ## Building the Model in R
-No need to cut and paste code: the complete R script described below is part of this git repository (GBM-example.R).
+No need to cut and paste code: the complete R script described below is part of this git repository (GBM_AVGBitRate.R).
 ### Load the training and test data into H2O
 Since we are playing with a small data set for this example, we will start H2O locally and load the datasets:
 
