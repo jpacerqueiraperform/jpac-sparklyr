@@ -238,7 +238,7 @@ gbm_params1 <- list(learn_rate = c(0.5, 1.0),
                     col_sample_rate = c(0.1, 0.5, 1.0))
 
 # Takes 2 minutes to obtain the grid of models
-# Models available later in http://ixpbdaopta01.prod.ix.perform.local:54321/flow/index.html 
+# Models available later in http://gatewayenv.performgroup.com:54321/flow/index.html 
 #
 # Train and validate a grid of GBMs
 gbm_grid1 <- h2o.grid("gbm", x = x, y = y,
@@ -490,8 +490,8 @@ To use the template:
 
 ```bash
 $ #!/usr/bin/env bash
-$ scp analyticsdb@ixpbdaopta01.prod.ix.perform.local:~/h2omodels-v1-avg-bitrate/h2o-genmodel.jar .
-$ scp analyticsdb@ixpbdaopta01.prod.ix.perform.local:~/h2omodels-v1-avg-bitrate/gbm_grid1_model_17.java .
+$ scp analyticsdb@gatewayenv.performgroup.com:~/h2omodels-v1-avg-bitrate/h2o-genmodel.jar .
+$ scp analyticsdb@gatewayenv.performgroup.com:~/h2omodels-v1-avg-bitrate/gbm_grid1_model_17.java .
 $ mv  gbm_grid1_model_17.java GBMAvgBitRateMo17.loc1.java
 $ sed "s,gbm_grid1_model_17,GBMAvgBitRateMo17,g"  GBMAvgBitRateMo17.loc1.java > GBMAvgBitRateMo17.loc2.java
 $ # 
@@ -580,7 +580,7 @@ Keep in mind that your UDF is only loaded in Hive for as long as you are using i
 Now the moment we've been working towards:
 
 ```r
-(IX Prod)[analyticsdb@ixpbdaopta01 ~/testgateway/hive_test]$ cat hive_udf_scoredata_AvgBitRate_ScoreDataUDFGBM17_view.hql 
+(IX Prod)[analyticsdb@gatewayenv ~/testgateway/hive_test]$ cat hive_udf_scoredata_AvgBitRate_ScoreDataUDFGBM17_view.hql 
 ADD JAR hdfs:///user/analyticsdb/H2O/UDFtest/GBMAvgBitRateM17lib/h2o-genmodel.jar;
 ADD JAR hdfs:///user/analyticsdb/H2O/UDFtest/GBMAvgBitRateM17lib/ScoreDataUDFGBMAVGM17-1.0-SNAPSHOT.jar;
 CREATE TEMPORARY FUNCTION scoredatavg AS 'ai.h2o.hive.udf.ScoreDataUDFGBMAVGM17';
@@ -588,7 +588,7 @@ USE default;
 SHOW TABLES;
 DROP TABLE IF EXISTS conviva_avgbitrate_pred;
 SELECT asset, deviceos, country, state, city, asn, isp, start_time_unix_time,startup_time_ms, playing_time_ms, buffering_time_ms, interrupts, startup_error, sessiontags, ipaddress, cdn, browser, convivasessionid, streamurl, errorlist, percentage_complete, average_bitrate_kbps,
-(IX Prod)[analyticsdb@ixpbdaopta01 ~/testgateway/hive_test]$ bash -x beeline_hive_2.sh password_file2.txt hive_udf_scoredata_AvgBitRate_ScoreDataUDFGBM17_view.hql  
+(IX Prod)[analyticsdb@gatewayenv ~/testgateway/hive_test]$ bash -x beeline_hive_2.sh password_file2.txt hive_udf_scoredata_AvgBitRate_ScoreDataUDFGBM17_view.hql  
 + echo '<<beeline -f>>  PASSWORDFILE EXECUTIONFILE '
 <<beeline -f>>  PASSWORDFILE EXECUTIONFILE 
 ++ pwd
