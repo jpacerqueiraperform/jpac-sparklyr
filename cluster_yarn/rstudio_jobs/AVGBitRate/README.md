@@ -4,10 +4,10 @@
 ## Example - R-Studio SparklyR H20.ai  - Opta Gateway 
 
 1. Generated Model from R-Studio s§ession in Spark and H20 Context for YARN in the bda cluster 
-2. Model generation of R session https://stash.performgroup.com/projects/BDA/repos/bda_exadata_samples/browse/SAMPLE_IXPBDAOPTA01_TOOLS/jpac-sparklyr/rstudio_jobs/hive_udf_pojo_template/GBM_DeepLearning_Plotting_POJO_Export.R
-3. Tutorial explained online https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/hive_udf_template/hive_udf_pojo_template/pom.xml
-
-
+2. Model generation of R session for :
+ - Spark yarn-client follow [option1](https://github.com/jpacerqueira/jpac-sparklyr/blob/master/cluster_yarn/rstudio_jobs/AVGBitRate/GBM_AVGBitRate.R)
+ - Spark local follow [option2](https://github.com/jpacerqueira/jpac-sparklyr/blob/master/cluster_yarn/rstudio_jobs/AVGBitRate/GBM_AVGBitRate-Local.R)
+3. Tutorial explained online with Hive UDF score function from a Pojo exported model [here](https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/hive_udf_template/hive_udf_pojo_template/pom.xml)
 
 ## Hive UDF POJO Example - Tutorial Explained
 
