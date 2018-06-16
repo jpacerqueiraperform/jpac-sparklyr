@@ -29,7 +29,7 @@ For steps 1-3, we will give instructions scoring the data through R.  We will ad
 
 This tutorial assumes the following:
 
-1. Some familiarity with using H2O in R.  Getting started tutorials can be found [here](http://docs.0xdata.com/newuser/top.html).
+1. Some familiarity with using H2O in R.  Getting started tutorials can be found [here](http://docs.h2o.ai/sparkling-water/2.1/latest-stable/doc/tutorials/calling_h2o_algos.html).
 2. The ability to compile Java code.  The repository provides a pom.xml file, so using Maven will be the simplest way to compile, but IntelliJ IDEA will also read in this file.  If another build system is preferred, it is left to the reader to figure out the compilation details.
 3. A working Hive install to test the results.
 
