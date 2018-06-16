@@ -1,13 +1,13 @@
 
-## Hive UDF POJO Example
 
-## Example - R-Studio SparklyR H20.ai  - Opta Gateway 
+## Environment - R-Studio SparklyR H20.ai  - Gateway 
 
 1. Generated Model from R-Studio s§ession in Spark and H20 Context for YARN in the bda cluster 
 2. Model generation of R session for :
  - Spark yarn-client follow [option1](https://github.com/jpacerqueira/jpac-sparklyr/blob/master/cluster_yarn/rstudio_jobs/AVGBitRate/GBM_AVGBitRate.R)
  - Spark local follow [option2](https://github.com/jpacerqueira/jpac-sparklyr/blob/master/cluster_yarn/rstudio_jobs/AVGBitRate/GBM_AVGBitRate-Local.R)
 3. Tutorial explained online with Hive UDF score function from a Pojo exported model [here](https://github.com/h2oai/h2o-tutorials/blob/master/tutorials/hive_udf_template/hive_udf_pojo_template/pom.xml)
+4. Tutorial on setup of the r_env for the spark application container using condar available [here](https://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/)
 
 ## Hive UDF POJO Example - Tutorial Explained
 
