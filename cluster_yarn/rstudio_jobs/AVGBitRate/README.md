@@ -35,11 +35,14 @@ This tutorial assumes the following:
 
 ## The Data
 
-For this post, we will be using the H2O conviva cancer evaluation dataset conviva.csv
+For this post, we will be using with H2O an internal Perform group asset conviva , used on the evaluation of the streaming conditions for Perform Group DAZN App
 
-The goal of the analysis in this demo is to predict if the VOL of your conviva increases according to the evolution of your proteins in the blog level and your age and race conditions .  The columns we will be using are:
-
-* AGE:  age
+The goal of the analysis in this demo is to predict if the average bit rate in our conviva data increases according to the evolution in the streaming details and parameters .  The columns we will be using are the numerical attributes in cnviva that  can be directly used to “learn” using ML
+* Stream start time: start_time 
+* Stream play time : play_time
+* Stream average bit rate in session : avg_bit_rate 
+* Stream Buffering loa bucket time : buffering_time 
+* Percentage complete for VOD asset OR  -1 Live asset :  percentage_complete
 
 
 ## Building the Model in R
