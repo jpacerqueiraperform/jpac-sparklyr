@@ -38,12 +38,14 @@ This tutorial assumes the following:
 For this post, we will be using with H2O an internal Perform group asset conviva , used on the evaluation of the streaming conditions for Perform Group DAZN App
 
 The goal of the analysis in this demo is to predict if the average bit rate in our conviva data increases according to the evolution in the streaming details and parameters .  The columns we will be using are the numerical attributes in cnviva that  can be directly used to “learn” using ML
+* ASN Network distribution  : asn
 * Stream start time: start_time 
 * Stream play time : play_time
 * Stream average bit rate in session : avg_bit_rate 
 * Stream Buffering loa bucket time : buffering_time 
-* Percentage complete for VOD asset OR  -1 Live asset :  percentage_complete
-
+* Percentage complete for VOD OR -1=Live asset :  percentage_complete
+* Number if Interruptions in strem buffering : interrupts
+* Startup Error digit OR 0=No error : startup_error
 
 ## Building the Model in R
 No need to cut and paste code: the complete R script described below is part of this git repository (GBM-example.R).
