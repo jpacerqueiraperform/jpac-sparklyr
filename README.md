@@ -21,9 +21,9 @@
   
   - - Usage of H2O Models as Hive UDF POJO/MOJO : https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/hive_udf_template/hive_udf_pojo_template 
 
-  -  Using SparkliR with conda R zio in the driver for spark containers :
+  -  Using Sparklyr with conda R in the driver for spark containers :
 
-  - - From Cloudera Workbench option2 : https://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/ 
+  - -  Cloudera Note for condaR is similar to CDSW Workbench option2 : https://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/ 
 
  Enjoy :) 
 
